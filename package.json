@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "yarn build && netlify deploy --prod"
   },
   "dependencies": {
     "@ginkgo-bioworks/react-json-schema-form-builder": "^2.9.0",
