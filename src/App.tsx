@@ -1,10 +1,12 @@
 import { useState } from 'react';
 // @ts-ignore
 import { FormBuilder } from '@ginkgo-bioworks/react-json-schema-form-builder';
+import schemaFile from './schema.json';
+import uiSchemaFile from './uischema.json';
 
 function App() {
-  const [schema, setSchema] = useState('');
-  const [uischema, setUischema] = useState('');
+  const [schema, setSchema] = useState(JSON.stringify(schemaFile));
+  const [uischema, setUischema] = useState(JSON.stringify(uiSchemaFile));
 
   return (
     <div className="App">
